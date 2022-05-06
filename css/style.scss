@@ -1,0 +1,83 @@
+$primary-bright-orange: hsl(31, 77%, 52%);
+$primary-Dark-cyan: hsl(184, 100%, 22%);
+$primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+$neutral-Transparent-white: hsla(0, 0%, 100%, 0.75);
+$neutral-Very-light-gray: hsl(0, 0%, 95%);
+
+$title-font: 'Big Shoulders Display', cursive;
+$info-font: 'Lexend Deca', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color:$neutral-Transparent-white;
+    font-family: $info-font;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $neutral-Very-light-gray;
+    font-family: $title-font;
+}
+
+@mixin btn-shape {
+    height: 3rem;
+    width: 50%;
+    border:none;
+    border-radius: 10rem;
+    background-color: white;
+}
+
+@mixin btn-hover{
+    color: $neutral-Transparent-white;
+}
+
+.orange{
+    background-color: $primary-bright-orange;
+    &__btn-card{
+        @include btn-shape();
+        color: $primary-bright-orange;
+    }
+    &__btn-card:hover{
+        @include btn-hover();
+        background-color: $primary-bright-orange;
+        border: 2px solid $neutral-Transparent-white;
+    }
+}
+
+.dark-cyan{
+    background-color: $primary-Dark-cyan;
+    &__btn-card{
+        @include btn-shape();
+        color: $primary-Dark-cyan;
+    }
+    &__btn-card:hover{
+        @include btn-hover();
+        background-color: $primary-Dark-cyan;
+        border: 2px solid $neutral-Transparent-white;
+    }
+}
+
+.very-dark{
+    background-color: $primary-very-dark-cyan;
+    &__btn-card{
+        @include btn-shape();
+        color: $primary-very-dark-cyan;
+    }
+    &__btn-card:hover{
+        @include btn-hover();
+        background-color: $primary-very-dark-cyan;
+        border: 2px solid $neutral-Transparent-white;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        margin-top: 6rem;
+    }
+}

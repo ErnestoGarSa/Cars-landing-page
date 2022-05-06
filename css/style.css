@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.orange {
+  background-color: #e38826;
+}
+
+.orange__btn-card {
+  height: 3rem;
+  width: 50%;
+  border: none;
+  border-radius: 10rem;
+  background-color: white;
+  color: #e38826;
+}
+
+.orange__btn-card:hover {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #e38826;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.dark-cyan {
+  background-color: #006970;
+}
+
+.dark-cyan__btn-card {
+  height: 3rem;
+  width: 50%;
+  border: none;
+  border-radius: 10rem;
+  background-color: white;
+  color: #006970;
+}
+
+.dark-cyan__btn-card:hover {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #006970;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.very-dark {
+  background-color: #004241;
+}
+
+.very-dark__btn-card {
+  height: 3rem;
+  width: 50%;
+  border: none;
+  border-radius: 10rem;
+  background-color: white;
+  color: #004241;
+}
+
+.very-dark__btn-card:hover {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #004241;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-top: 6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
